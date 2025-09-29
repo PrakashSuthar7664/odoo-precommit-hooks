@@ -4,7 +4,7 @@ from pathlib import Path
 import tempfile
 import shutil
 
-HEADER = "# -*- coding: utf-8 -*-\n"
+HEADER = "# -*- coding: utf-8 -*-\n\n"
 
 def ensure_python_header(filepath: Path) -> bool:
     """Ensure the file starts with UTF-8 header.

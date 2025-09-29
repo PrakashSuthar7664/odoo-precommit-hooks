@@ -4,7 +4,7 @@ from pathlib import Path
 import tempfile
 import shutil
 
-HEADER = "/** @odoo-module */\n"
+HEADER = "/** @odoo-module */\n\n"
 
 def ensure_js_header(filepath: Path) -> bool:
     """Ensure the file starts with Odoo JS header.
