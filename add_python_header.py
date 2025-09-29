@@ -9,6 +9,11 @@ HEADER = "# -*- coding: utf-8 -*-\n\n"
 def ensure_python_header(filepath: Path) -> bool:
     """Ensure the file starts with UTF-8 header.
     Returns True if modified, False otherwise."""
+
+    # Skip Odoo special files
+    if filepath.name in {"__manifest__.py", "__init__.py"}:
+        return False
+        
     with open(filepath, "r", encoding="utf-8") as f:
         lines = f.readlines()
 
