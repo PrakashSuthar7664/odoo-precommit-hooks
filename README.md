@@ -11,7 +11,7 @@ In your Odoo project, add this to `.pre-commit-config.yaml`:
 
 ```yaml
 repos:
-  - repo: https://github.com/YOUR_USERNAME/odoo-precommit-hooks
+  - repo: https://github.com/PrakashSuthar7664/odoo-precommit-hooks.git
     rev: v1.0.0
     hooks:
       - id: add-python-utf8-header
