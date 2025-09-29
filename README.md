@@ -12,7 +12,7 @@ In your Odoo project, add this to `.pre-commit-config.yaml`:
 ```yaml
 repos:
   - repo: https://github.com/PrakashSuthar7664/odoo-precommit-hooks.git
-    rev: v1.0.1
+    rev: v1.0.3
     hooks:
       - id: add-python-utf8-header
       - id: add-js-odoo-header
