@@ -11,3 +11,10 @@
     entry: add_js_header.py
     language: script
     files: \.js$
+    
+-   id: remove-debug-statements
+    name: Remove debug statements
+    description: "Removes print() from Python and console.log() from JavaScript files"
+    entry: remove_debug_statements.py
+    language: script
+    files: \.(py|js)$
