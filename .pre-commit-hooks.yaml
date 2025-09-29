@@ -2,12 +2,12 @@
     name: Ensure Python UTF-8 header
     description: "Ensures all Python files start with '# -*- coding: utf-8 -*-'"
     entry: add_python_header.py
-    language: python
+    language: script
     files: \.py$
 
 -   id: add-js-odoo-header
     name: Ensure JS Odoo module header
     description: "Ensures all JS files start with '/** @odoo-module */'"
     entry: add_js_header.py
-    language: python
+    language: script
     files: \.js$
