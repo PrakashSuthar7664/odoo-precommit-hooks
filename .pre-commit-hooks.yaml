@@ -1,0 +1,11 @@
+- id: add-python-utf8-header
+  name: Ensure Python UTF-8 header
+  entry: add_python_header.sh
+  language: script
+  files: \.py$
+
+- id: add-js-odoo-header
+  name: Ensure JS Odoo module header
+  entry: add_js_header.sh
+  language: script
+  files: \.js$

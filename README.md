@@ -1,0 +1,18 @@
+.# Odoo Pre-commit Hooks
+
+This repo provides pre-commit hooks for Odoo development:
+
+- Ensures all Python files have `# -*- coding: utf-8 -*-` at the top.
+- Ensures all JS files have `/** @odoo-module */` at the top.
+
+## Usage
+
+In your Odoo project, add this to `.pre-commit-config.yaml`:
+
+```yaml
+repos:
+  - repo: https://github.com/YOUR_USERNAME/odoo-precommit-hooks
+    rev: v1.0.0
+    hooks:
+      - id: add-python-utf8-header
+      - id: add-js-odoo-header
